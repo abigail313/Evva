@@ -1,0 +1,142 @@
+<html>
+    <head>
+        nowa strona
+    </head>
+     <style>
+		.caly_blok{ 
+				font-size:24px;
+				min-width:600px;
+				max-width:1800px;
+				}
+        .naglowek{
+				background-color:blue;
+				}
+        .menu2{
+				background-color:green;
+				display:table-cell;
+				width:10%; 
+				}
+        .tekst{
+				font-family:verdana;
+				/*display:table-cell;*/		
+				background-color:lightgrey; 
+				width:90%; 
+				min-height:200px;
+				}
+        .stopka{
+				background-color:blue; 
+				clear:both;
+				}
+		ol {
+				list-style-type:none;
+				padding:0;
+				margin:0;
+				font-size:18px;
+				height:2em;
+				line-height:2em;
+				text-align:center;
+			}
+		ol a { /*wyglad elementow a znajdujących sie w el. ol*/
+			display:block;
+			color:#000;
+			text-decoration:none;
+			padding:0 5px;
+			}
+		ol > li {
+			float:left;
+			width:150px;
+			margin-left:1px;
+			background-color:green;
+			height:2em;
+			}
+		ol > li:first-child {
+			margin-left:0;
+			}
+ 
+		ol > li:hover {
+			background-color:white;
+			}
+		ol >li:hover> a{
+			color:orange;
+			}
+		
+		ol > li:hover > ul {
+			display:block;
+			}				
+/*cześć rozwijana menu*/
+		ol > li > ul { /*wyglad elemntów ul*/
+			display:none;
+			list-style-type:none;
+			padding:0;
+			margin:0;
+			}
+		ol > li > ul > li { /*wyglad elementów li*/
+			position:relative;
+			background-color:green;
+			}
+		ol >li > ul> li > a {/*wyglad elementu a*/
+			border-top: 1px solid #FFF;
+			}
+		ol > li > ul > li:hover { /*wyglad elementu li po najechaniu myszla*/
+			background-color:white;
+			}
+
+		ol > li > ul > li:hover a { /*wyglad elementu a po najechaniu*/
+			color:orange;
+			}	
+    </style>
+    <body>
+		<div class="caly_blok">
+        <div class="naglowek"> nagłówek  </div>
+        <div class="menu2">
+	<!-- 		<ol>
+				<li class="top-link"> <a href="nowa.html">nowa</a></li>
+				<li class="top-link"> <a href="menu.html">menu</a></li>
+				<li class="top-link"> <a href="nowa.html">nowa</a></li>
+				<li class="top-link"> <a href="menu.html">menu</a></li>
+            </ol> -->
+			<ol>
+				<li><a href="top-link">nowa</a>
+					<ul>
+						<li><a href="nowa.html">nowa</a></li>
+						<li><a href="#">link - 2</a></li>
+						<li><a href="#">link - 3</a></li>
+						<li><a href="#">link - 4</a></li>
+						<li><a href="#">link - 5</a></li>
+					</ul>
+				</li>
+	
+				<li><a href="#">menu</a>
+					<ul>
+						<li><a href="#">link - 1</a></li>
+						<li><a href="#">link - 2</a></li>
+						<li><a href="#">link - 3</a></li>
+					</ul>
+				</li>
+	
+				<li><a href="#">nowa</a></li>
+	
+				<li><a href="#">menu</a>
+					<ul>
+						<li><a href="#">link - 1</a></li>
+						<li><a href="#">link - 2</a></li>
+						<li><a href="#">link - 3</a></li>
+						<li><a href="#">link - 4</a></li>
+					</ul>
+				</li>
+			</ol>
+        </div>
+		
+        <div class="tekst">
+           <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.</p>
+		   <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.</p>
+		   <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.</p>
+		   <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.</p>
+		   <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.</p>
+		   <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.</p>
+		   <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w.</p>
+		</div>
+        <div class="stopka">dół</div>
+        </div>
+    </body>
+</html>
